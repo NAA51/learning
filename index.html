@@ -1,32 +1,108 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title></title>
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta content="My portfolio" name="description">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <base href="https://www.numamo.org/Services/pus/"/>
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+    <link href="favicon.ico" rel="icon" sizes="any">
+    <link href="icon.svg" rel="icon" type="image/svg+xml">
+    <link href="icon.png" rel="apple-touch-icon">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="site.webmanifest" rel="manifest">
+
+    <script src="js/app.js"></script>
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<div id="mainMenuBlock">
+    <div class="commonFlexPanel">
+        <a class="mainMenuRefText" onclick="smoothScroll(document.getElementById('aboutMeBlock'))">Обо мне</a>
+        <a class="mainMenuRefText" onclick="smoothScroll(document.getElementById('portfolioBlock'))">Портфолио</a>
+        <a class="mainMenuRefText" onclick="smoothScroll(document.getElementById('educationBlock'))">Образование</a>
+        <a class="mainMenuRefText" onclick="smoothScroll(document.getElementById('contactsBlock'))">Контакты</a>
+    </div>
+</div>
+
+<div class="commonSquaredBlock">
+    <div class="commonFlexNowPanel">
+        <div class="mainTitlePanel">
+          <span>
+            <h1 id="mainTitleHp1">
+              WEB
+            </h1>
+            <h1 id="mainTitleHp2">
+              DESIGNER
+            </h1>
+          </span>
+        </div>
+        <img alt="My Photo" id="mainTitleImage" src="img/Pusy.png"/>
+    </div>
+</div>
+
+<div id="aboutMeBlock">
+    <h2 id="aboutMeHeader">
+        Обо мне
+    </h2>
+    <div class="commonFlexPanel">
+        <div>
+            <img alt="PhotoShop" class="progImage" src="img/PS.svg"/>
+            <img alt="Figma" class="progImage" src="img/Figma.svg"/>
+            <img alt="Tilda" class="progImage" src="img/Tilda.svg"/>
+        </div>
+        <p id="aboutMeText">
+            Меня зовут Анастасия Назимова. Я занимаюсь веб дизайном с 2023 года. В рамках обучения
+            имею опыт разработки лендингов (для центра воспроизводства животных и Московского зоопарка),
+            инернет-магазина для кофе-кондитерской.
+            Мне нравятся амбициозные проекты, в которых всегда есть место для вдохновения и творчества
+        </p>
+    </div>
+</div>
+
+<div id="portfolioBlock">
+    <h1 id="portfolioTitle">
+        Портфолио
+    </h1>
+    <img alt="my project" id="portfolioImg" src="img/Landing2.png"/>
+</div>
+
+<div id="educationBlock">
+    <h2 id="educationHeader">
+        Образование
+    </h2>
+    <div class="commonFlexPanel">
+        <img alt="gb" id="educationImage" src="img/gb.svg"/>
+        <div id="educationText">
+            <p>
+                Онлайн университет GeekBrains, специализация "WEB дизайнер". В программа входили следующие дисциплины
+            </p>
+            <ul>
+                <li>Композиция</li>
+                <li>Adobe Photoshop</li>
+                <li>Основы HTML-верстки</li>
+                <li>История дизайна</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="contactsBlock">
+    <h2 id="contactHeader">
+        Контакты
+    </h2>
+    <a class="contactRef" href= "mailto: name@email.com">nazimovaaa@mail.ru</a>
+    <a class="contactRef" href="tel:+7 915 222 22 22">+7 915 222 22 22</a>
+    <div id="socialNetworkImgPanel">
+        <img alt="telegram" class="socialNetworkImg" src="img/logos_telegram.svg"/>
+        <img alt="whatsApp" class="socialNetworkImg" src="img/logos_whatsapp-icon.svg"/>
+    </div>
+</div>
 
 </body>
-
 </html>
